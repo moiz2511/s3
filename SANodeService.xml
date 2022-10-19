@@ -1,0 +1,13 @@
+<service>
+	<id>SANodeService</id>
+	<name>Service ADVISOR Node</name>
+	<description>Runs the Service ADVISOR™  SA 5 Node service</description>
+	<workingdirectory>C:\Program Files (x86)\Service ADVISOR\Node WebServer</workingdirectory>
+	<env name="NODE_ENV" value="production"></env>
+	<onfailure action="restart"></onfailure>
+	<executable>C:\Program Files (x86)\nodejs\npm.cmd</executable>
+	<startargument>start</startargument>
+	<log mode="none"></log>
+	<stopexecutable>C:\Program Files (x86)\nodejs\npm.cmd</stopexecutable>
+	<stopargument>stop</stopargument>
+</service>
